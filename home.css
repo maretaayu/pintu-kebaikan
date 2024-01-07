@@ -22,6 +22,24 @@ body {
   --disabled: #d3d3d3;
 }
 
+.tag {
+  background-color: #ecffef;
+  color: var(--primary);
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  width: fit-content;
+  margin: 0;
+}
+input,
+select {
+  width: -webkit-fill-available;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  margin-top: 0.75rem;
+}
 button {
   cursor: pointer;
   border-radius: 4rem;
@@ -31,7 +49,8 @@ button {
   width: fit-content;
 }
 
-button.primary {
+button.primary,
+.primary {
   background-color: var(--primary);
   color: var(--light);
   border: none;
@@ -70,12 +89,20 @@ button.lg {
 button.lg {
   font-size: 0.875rem;
 }
-
+.w-full {
+  width: 100%;
+}
+.radius-full {
+  border-radius: 4rem;
+}
 .d-flex {
   display: flex;
 }
 .text-center {
   text-align: center;
+}
+.align-items-center {
+  align-items: center;
 }
 .justify-content-center {
   justify-content: center;
@@ -86,7 +113,12 @@ button.lg {
 .hero {
   color: var(--light);
 }
-
+form {
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  gap: 1rem;
+  display: grid;
+}
 @media (min-width: 1025px) {
   .hero {
     position: relative;
@@ -110,6 +142,8 @@ button.lg {
     position: absolute;
     margin-left: -2rem;
     height: 500px;
+    width: -webkit-fill-available;
+    object-fit: cover;
   }
   .credibility {
     gap: 64px;
@@ -144,6 +178,18 @@ button.lg {
   .informasi-dana {
     gap: 3rem;
   }
+  form {
+    padding: 2rem;
+    width: 400px;
+  }
+  .form {
+    padding: 80px 0;
+  }
+  .form-content {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -159,7 +205,7 @@ button.lg {
     margin-top: -3rem;
   }
   .hero-right img {
-    width: -webkit-fill-available;
+    width: 100%;
     height: 250px;
     object-fit: cover;
   }
@@ -214,6 +260,20 @@ button.lg {
   }
   .informasi-dana {
     display: grid;
+  }
+  .form-right {
+    width: 100%;
+    display: flex;
+  }
+  .form {
+    padding: 40px 0;
+  }
+  form {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  .form-left {
+    display: none;
   }
 }
 
@@ -278,9 +338,37 @@ button.lg {
   padding: 1rem;
   border-radius: 12px;
   color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
-
+.activity-item img {
+  border-radius: 12px;
+}
 .amount {
   font-weight: bold;
   color: var(--accent);
+}
+
+/* progress bar  */
+.progress-bar {
+  background-color: #d3d3d3; /* Warna grey */
+  height: 0.5rem;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.inner-bar {
+  background-color: #008000; /* Warna green */
+  height: 100%;
+  width: 0; /* Lebar ini akan diubah menggunakan JavaScript */
+}
+.percentage-label {
+  color: var(--text);
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+.bar {
+  margin-top: 0.75rem;
 }

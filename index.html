@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <nav>
+    <nav class="page-center">
       <a href="#">
         <img src="assets/Logo.png" alt="Logo" />
       </a>
@@ -150,32 +150,103 @@
           <div class="group-activity d-flex">
             <div class="activity-item">
               <img src="assets/Image.png" alt="Aktivitas" />
-              <p class="tag">Tag</p>
-              <h3>Lorem Ipsum is simply dummy text of the printing</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing</p>
-              TODO: Progress bar here
-              <button class="primary lg">Lihat Detail</button>
+              <div>
+                <p class="tag">Tag</p>
+                <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                <div class="bar d-flex align-items-center">
+                  <div class="progress-bar">
+                    <div class="inner-bar" data-progress="90"></div>
+                  </div>
+                  <div class="percentage-label" data-progress="90">90%</div>
+                </div>
+              </div>
+              <button class="primary lg w-full">Lihat Detail</button>
             </div>
             <div class="activity-item">
               <img src="assets/Image.png" alt="Aktivitas" />
-              <p class="tag">Tag</p>
-              <h3>Lorem Ipsum is simply dummy text of the printing</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing</p>
-              TODO: Progress bar here
-              <button class="primary lg">Lihat Detail</button>
+              <div>
+                <p class="tag">Tag</p>
+                <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                <div class="bar d-flex align-items-center">
+                  <div class="progress-bar">
+                    <div class="inner-bar" data-progress="90"></div>
+                  </div>
+                  <div class="percentage-label" data-progress="90">90%</div>
+                </div>
+              </div>
+              <button class="primary lg w-full">Lihat Detail</button>
             </div>
             <div class="activity-item">
               <img src="assets/Image.png" alt="Aktivitas" />
-              <p class="tag">Tag</p>
-              <h3>Lorem Ipsum is simply dummy text of the printing</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing</p>
-              TODO: Progress bar here
-              <button class="primary lg">Lihat Detail</button>
+              <div>
+                <p class="tag">Tag</p>
+                <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                <div class="bar d-flex align-items-center">
+                  <div class="progress-bar">
+                    <div class="inner-bar" data-progress="90"></div>
+                  </div>
+                  <div class="percentage-label" data-progress="90">90%</div>
+                </div>
+              </div>
+              <button class="primary lg w-full">Lihat Detail</button>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- end of activity  -->
+
+    <!-- form   -->
+    <div class="form">
+      <div class="page-center">
+        <h2 class="text-center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </h2>
+        <div class="form-content d-flex">
+          <div class="form-left">
+            <img src="assets/ImageForm.png" alt="Image Form" />
+          </div>
+          <div class="form-right">
+            <form>
+              <div>
+                <label for="name">Nama:</label><br />
+                <input type="text" id="name" name="name" />
+              </div>
+              <div>
+                <label for="phone">No HP:</label><br />
+                <input type="tel" id="phone" name="phone" />
+              </div>
+              <div>
+                <label for="category">Kategori:</label><br />
+                <select id="category" name="category">
+                  <option value="">Pilih...</option>
+                  <option value="kategori1">Kategori 1</option>
+                  <option value="kategori2">Kategori 2</option>
+                  <!-- tambahkan option lain jika diperlukan -->
+                </select>
+              </div>
+
+              <div>
+                <label for="subcategory">Sub Kategori:</label><br />
+                <select id="subcategory" name="subcategory">
+                  <option value="">Pilih...</option>
+                  <option value="subkategori1">Sub Kategori 1</option>
+                  <option value="subkategori2">Sub Kategori 2</option>
+                  <!-- tambahkan option lain jika diperlukan -->
+                </select>
+              </div>
+
+              <input class="primary radius-full" type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of form  -->
+    <script src="home.js"></script>
   </body>
 </html>
