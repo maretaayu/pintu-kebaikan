@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+body {
+  font-family: Raleway;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.page-center {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+:root {
+  --primary: #518c51;
+  --secondary: #d9eadc;
+  --dark: #2a3c34;
+  --light: #fff;
+  --accent: #94eec3;
+  --text: #333;
+  --border: #dddddd;
+  --disabled: #d3d3d3;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 4rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  padding: 0.75rem 1.5rem;
+  width: fit-content;
+}
+
+button.primary {
+  background-color: var(--primary);
+  color: var(--light);
+  border: none;
+}
+
+button.primary:hover {
+  background-color: var(--dark);
+}
+
+button.secondary {
+  background-color: transparent;
+  color: var(--light);
+  border: 1px solid var(--light);
+}
+
+button.secondary:hover {
+  background-color: var(--text);
+  color: var(--light);
+}
+
+button.tertiary {
+  background-color: var(--light);
+  color: var(--primary);
+  border: none;
+}
+
+button.tertiary:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+button.lg {
+  font-size: 1rem;
+}
+
+button.lg {
+  font-size: 0.875rem;
+}
+
+.d-flex {
+  display: flex;
+}
+.text-center {
+  text-align: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.hero span {
+  color: var(--accent);
+}
+.hero {
+  color: var(--light);
+}
+
+@media (min-width: 1025px) {
+  .hero {
+    position: relative;
+    height: 500px;
+  }
+
+  .hero-left {
+    background-image: url("assets/ImagebackgroundHero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    z-index: 99;
+    padding: 88px;
+    width: 600px;
+  }
+
+  .hero-right img {
+    position: absolute;
+    margin-left: -2rem;
+    height: 500px;
+  }
+  .credibility {
+    gap: 64px;
+  }
+  .help {
+    padding: 80px 0;
+  }
+  .help-content {
+    gap: 40px;
+  }
+  .help-right {
+    display: grid;
+    gap: 28px;
+  }
+  .layanan {
+    padding: 80px 0;
+    color: var(--light);
+  }
+  .layanan-content {
+    display: grid;
+    gap: 56px;
+  }
+  .activity {
+    padding: 80px 0;
+  }
+  .group-activity {
+    gap: 2rem;
+  }
+  .amount {
+    font-size: 2rem;
+  }
+  .informasi-dana {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .hero-left {
+    background-image: url("assets/ImageBackgroundHeroMobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 20px;
+    margin-top: -3rem;
+  }
+  .hero-right img {
+    width: -webkit-fill-available;
+    height: 250px;
+    object-fit: cover;
+  }
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .credibility {
+    gap: 32px;
+  }
+  button {
+    width: 100%;
+  }
+  .help-left img {
+    width: 100%;
+    height: 100%;
+  }
+  .help-content {
+    flex-wrap: wrap;
+  }
+  .help {
+    padding: 64px 0;
+  }
+  .help-right {
+    display: grid;
+    gap: 20px;
+  }
+  .layanan {
+    padding: 64px 0;
+    color: var(--light);
+  }
+  .layanan-content {
+    display: grid;
+    gap: 32px;
+  }
+  .group-layanan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .activity {
+    padding: 64px 0;
+  }
+  .group-activity {
+    gap: 1rem;
+  }
+  .group-activity {
+    overflow-x: scroll;
+  }
+  .amount {
+    font-size: 1.5rem;
+  }
+  .informasi-dana {
+    display: grid;
+  }
+}
+
+/* section bantu  */
+.group-bantu {
+  display: grid;
+  gap: 1rem;
+}
+
+.help-right span {
+  color: var(--primary);
+}
+
+.bantu-item {
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  align-items: center;
+  gap: 10px;
+}
+
+.bantu-item img {
+  width: 28px;
+  height: 28px;
+}
+
+/* layanan  */
+.layanan {
+  background-image: url("assets/ImageBackgroundLayanan.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.layanan a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+}
+.layanan-item {
+  background-color: var(--light);
+  color: var(--text);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.group-layanan {
+  gap: 2rem;
+}
+
+/* activity */
+.activity {
+  background-color: var(--dark);
+  color: var(--light);
+}
+.activity-content {
+  display: grid;
+  gap: 40px;
+}
+
+.activity-item {
+  background-color: var(--light);
+  padding: 1rem;
+  border-radius: 12px;
+  color: var(--text);
+}
+
+.amount {
+  font-weight: bold;
+  color: var(--accent);
+}
