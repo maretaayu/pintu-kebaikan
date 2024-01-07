@@ -203,6 +203,8 @@ form {
     background-size: cover;
     padding: 60px 20px;
     margin-top: -3rem;
+    position: relative;
+    z-index: 99;
   }
   .hero-right img {
     width: 100%;
