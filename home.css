@@ -107,6 +107,11 @@ button.lg {
 .justify-content-center {
   justify-content: center;
 }
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
 .hero span {
   color: var(--accent);
 }
@@ -308,8 +313,10 @@ form {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.layanan a {
+.link {
+  gap: 8px;
+}
+.link a {
   text-decoration: none;
   color: var(--primary);
   font-weight: bold;
