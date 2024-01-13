@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="anak-yatim.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-center">
+        <div class="anak-yatim">
+          <h1>Donasi Tersedia</h1>
+          <div class="tab">
+            <button
+              class="tablinks"
+              onclick="openCity(event, 'Anak Yatim')"
+              id="defaultOpen"
+            >
+              Anak Yatim
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'Pendidikan')">
+              Pendidikan
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'Pembangunan')">
+              Pembangunan
+            </button>
+          </div>
+
+          <div id="Anak Yatim" class="tabcontent">
+            <div class="group-card">
+              <div class="card">
+                <div class="banner"></div>
+                <div class="avatar">
+                  <img src="assets/User.png" alt="User" loading="lazy" />
+                </div>
+                <div class="detail">
+                  <p><b>Aleesha</b></p>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry...
+                  </p>
+                  <div class="d-flex link justify-content-center">
+                    <a href="#" class="align-items-center">Donasi Sekarang </a>
+                    <img
+                      src="assets/VectorIconArrowRight.svg"
+                      alt="Arrow Right"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="banner"></div>
+                <div class="avatar">
+                  <img src="assets/User.png" alt="User" loading="lazy" />
+                </div>
+                <div class="detail">
+                  <p><b>Aleesha</b></p>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry...
+                  </p>
+                  <div class="d-flex link justify-content-center">
+                    <a href="#" class="align-items-center">Donasi Sekarang </a>
+                    <img
+                      src="assets/VectorIconArrowRight.svg"
+                      alt="Arrow Right"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="Pendidikan" class="tabcontent">
+            <h3>Pendidikan</h3>
+            <p>Pendidikan is here</p>
+          </div>
+
+          <div id="Pembangunan" class="tabcontent">
+            <h3>Pembangunan</h3>
+            <p>Pembangunan is here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="donasi-lainnya">
+      <div class="page-center">
+        <div class="donasi-lainnya-content">
+          <div class="d-flex justify-content-space-between align-items-center">
+            <h2>Donasi Lainnya</h2>
+            <div class="d-flex link">
+              <a href="#" class="align-items-center">Selengkapnya</a>
+              <img src="assets/VectorIconArrowRight.svg" alt="Arrow Right" />
+            </div>
+          </div>
+          <div class="list-group d-grid gap-20">
+            <div class="list align-items-center d-flex gap-12">
+              <img src="assets/VectorIcon.svg" alt="Icon" />
+              <div class="d-grid gap-8">
+                <p class="m-0"><b>Sedekah anak yatim</b></p>
+                <div class="d-flex align-items-center gap-8">
+                  <p class="m-0">200.000</p>
+                  <p class="m-0">•</p>
+                  <p class="m-0 opacity-60">3 hari lalu</p>
+                </div>
+              </div>
+            </div>
+            <div class="list align-items-center d-flex gap-12">
+              <img src="assets/VectorIcon.svg" alt="Icon" />
+              <div class="d-grid gap-8">
+                <p class="m-0"><b>Sedekah anak yatim</b></p>
+                <div class="d-flex align-items-center gap-8">
+                  <p class="m-0">200.000</p>
+                  <p class="m-0">•</p>
+                  <p class="m-0 opacity-60">3 hari lalu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-center banner-donasi-container">
+      <div class="banner-donasi">
+        <div class="banner-donasi-content">
+          <h2 class="subtitle-bold-32">
+            Kami menerima buat sedekah selain material
+          </h2>
+          <button class="tertiary lg">Donasi Sekarang</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="home.js"></script>
+  </body>
+</html>

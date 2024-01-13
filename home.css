@@ -95,8 +95,14 @@ button.lg {
 .radius-full {
   border-radius: 4rem;
 }
+.m-0 {
+  margin: 0;
+}
 .d-flex {
   display: flex;
+}
+.d-grid {
+  display: grid;
 }
 .text-center {
   text-align: center;
@@ -111,7 +117,18 @@ button.lg {
 .justify-content-space-between {
   justify-content: space-between;
 }
-
+.gap-8 {
+  gap: 8px;
+}
+.gap-12 {
+  gap: 12px;
+}
+.gap-16 {
+  gap: 16px;
+}
+.gap-20 {
+  gap: 20px;
+}
 .hero span {
   color: var(--accent);
 }
@@ -380,4 +397,57 @@ form {
 }
 .bar {
   margin-top: 0.75rem;
+}
+
+/* tab  */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  margin-right: 12px;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
+
+.list {
+  background-color: var(--light);
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
 }
