@@ -250,6 +250,7 @@ form {
   }
   .help-content {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .help {
     padding: 64px 0;
@@ -401,13 +402,15 @@ form {
 
 /* tab  */
 .tab {
-  overflow: hidden;
+  overflow-x: scroll;
+  display: flex;
+  gap: 0.75rem;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
-  float: left;
+  min-width: 150px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -424,7 +427,6 @@ form {
 .tab button {
   border: 1px solid var(--primary);
   color: var(--primary);
-  margin-right: 12px;
 }
 
 /* Create an active/current tablink class */

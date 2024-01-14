@@ -13,7 +13,7 @@ h1 {
 .anak-yatim,
 .donasi-lainnya-content {
   display: grid;
-  gap: 40px;
+  gap: 32px;
 }
 .group-card {
   display: grid;
