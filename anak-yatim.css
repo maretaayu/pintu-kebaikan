@@ -10,11 +10,7 @@ h1 {
 .donasi-lainnya {
   padding: 80px 0;
 }
-.anak-yatim,
-.donasi-lainnya-content {
-  display: grid;
-  gap: 32px;
-}
+
 .group-card {
   display: grid;
   gap: 20px;
@@ -72,7 +68,11 @@ h1 {
   .group-card {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
+  .anak-yatim,
+  .donasi-lainnya-content {
+    display: grid;
+    gap: 32px;
+  }
   .banner-donasi {
     padding: 42px 118px;
     background-image: url("tinified/Banner.png");
@@ -92,16 +92,17 @@ h1 {
   }
 }
 @media (max-width: 1024px) {
-  .group-card {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .banner-donasi {
     padding: 42px 32px;
     background-image: url("BannerMobile.png");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 12px;
+  }
+  .anak-yatim,
+  .donasi-lainnya-content {
+    display: grid;
+    gap: 16px;
   }
 
   .banner-donasi-content {
