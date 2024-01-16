@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Raleway;
   overflow-x: hidden;
@@ -129,6 +132,24 @@ button.lg {
 .gap-20 {
   gap: 20px;
 }
+.gap-24 {
+  gap: 24px;
+}
+.gap-28 {
+  gap: 28px;
+}
+.gap-32 {
+  gap: 32px;
+}
+.gap-40 {
+  gap: 40px;
+}
+.gap-48 {
+  gap: 48px;
+}
+.gap-56 {
+  gap: 56px;
+}
 .hero span {
   color: var(--accent);
 }
@@ -141,7 +162,42 @@ form {
   gap: 1rem;
   display: grid;
 }
+
+.navigation-menu a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1rem;
+}
+.navigation-menu a:hover {
+  color: var(--primary);
+}
+
 @media (min-width: 1025px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .navigation-menu {
+    display: flex;
+    gap: 32px;
+  }
+  ul.navigation-menu {
+    padding: 0;
+  }
+  .navigation-menu li {
+    padding: 0;
+    list-style-type: none;
+  }
+  .cta-ghost {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 12px 24px;
+  }
+
   .hero {
     position: relative;
     height: 500px;
@@ -215,6 +271,16 @@ form {
 }
 
 @media (max-width: 1024px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .nav-menu-item {
+    display: table-caption;
+    text-align: center;
+  }
   .hero {
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -237,6 +303,8 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+  .cta-ghost {
   }
   .credibility {
     gap: 32px;

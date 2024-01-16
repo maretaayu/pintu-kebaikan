@@ -8,9 +8,32 @@
   </head>
   <body>
     <nav class="page-center">
-      <a href="#">
-        <img src="assets/Logo.png" alt="Logo" />
-      </a>
+      <div class="d-flex justify-content-space-between">
+        <a href="#" class="desktop">
+          <img src="assets/Logo.png" alt="Logo" />
+        </a>
+        <div
+          class="d-flex justify-content-space-between align-items-center gap-32"
+        >
+          <ul class="navigation-menu">
+            <li>
+              <a href="#donasi">
+                <div class="nav-menu-item">
+                  <img
+                    src="assets/icon-dcoument.svg"
+                    alt="Icon Document"
+                    class="mobile"
+                  />
+                  Donasi
+                </div>
+              </a>
+            </li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#aktivitas">Aktivitas</a></li>
+          </ul>
+          <a href="#" class="cta-ghost">Akun Saya</a>
+        </div>
+      </div>
     </nav>
     <section class="hero d-flex">
       <div class="hero-left">
@@ -43,7 +66,7 @@
     </section>
 
     <!-- section bantu  -->
-    <div class="help">
+    <div class="help" id="donasi">
       <div class="page-center">
         <div class="help-content d-flex">
           <div class="help-left">
@@ -88,7 +111,7 @@
     <!-- end of section bantu -->
 
     <!-- section layanan  -->
-    <div class="layanan">
+    <div class="layanan" id="layanan">
       <div class="page-center">
         <div class="layanan-content">
           <div class="text-center">
@@ -142,7 +165,7 @@
     <!-- end of layanan  -->
 
     <!-- section activity  -->
-    <div class="activity">
+    <div class="activity" id="aktivitas">
       <div class="page-center">
         <div class="activity-content">
           <div class="text-center">
