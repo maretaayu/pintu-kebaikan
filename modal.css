@@ -21,6 +21,7 @@
   width: 80%;
   position: relative;
   overflow-y: scroll;
+  border-radius: 12px;
   max-height: 600px;
 }
 
@@ -52,9 +53,6 @@
   .profile img {
     width: 100px;
     height: 100px;
-  }
-  .modal-content {
-    border-radius: 12px;
   }
 }
 
