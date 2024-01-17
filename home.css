@@ -93,6 +93,22 @@ button.lg {
   font-size: 0.875rem;
 }
 
+.text-primary {
+  color: var(--primary);
+}
+
+.with-border {
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+.btn-fixed-bottom {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  /* left: 0; */
+  /* right: 0; */
+  z-index: 99;
+}
 .cta-ghost {
   font-weight: bold;
   font-size: 1rem;
@@ -109,6 +125,24 @@ button.lg {
 }
 .m-0 {
   margin: 0;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+.mt-28 {
+  margin-top: 28px;
+}
+.mt-32 {
+  margin-top: 32px;
+}
+.mt-48 {
+  margin-top: 48px;
 }
 .d-flex {
   display: flex;
@@ -452,11 +486,16 @@ hr {
 }
 .link {
   gap: 8px;
+  align-items: center;
 }
 .link a {
   text-decoration: none;
   color: var(--primary);
   font-weight: bold;
+}
+.link img {
+  width: 20px;
+  height: 20px;
 }
 .layanan-item {
   background-color: var(--light);
