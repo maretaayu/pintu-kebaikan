@@ -75,7 +75,7 @@ h1 {
   }
   .banner-donasi {
     padding: 42px 118px;
-    background-image: url("tinified/Banner.png");
+    background-image: url("assets/Banner.png");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 24px;
@@ -94,7 +94,7 @@ h1 {
 @media (max-width: 1024px) {
   .banner-donasi {
     padding: 42px 32px;
-    background-image: url("BannerMobile.png");
+    background-image: url("assets/BannerMobile.png");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 12px;

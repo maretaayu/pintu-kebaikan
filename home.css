@@ -92,6 +92,15 @@ button.lg {
 button.lg {
   font-size: 0.875rem;
 }
+
+.cta-ghost {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--primary);
+  text-decoration: none;
+  padding: 12px 24px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -171,6 +180,17 @@ form {
 .navigation-menu a:hover {
   color: var(--primary);
 }
+ul.navigation-menu {
+  padding: 0;
+}
+.navigation-menu li {
+  padding: 0;
+  list-style-type: none;
+}
+.navigation-menu {
+  display: flex;
+  gap: 32px;
+}
 
 @media (min-width: 1025px) {
   .mobile {
@@ -178,24 +198,6 @@ form {
   }
   .desktop {
     display: block;
-  }
-  .navigation-menu {
-    display: flex;
-    gap: 32px;
-  }
-  ul.navigation-menu {
-    padding: 0;
-  }
-  .navigation-menu li {
-    padding: 0;
-    list-style-type: none;
-  }
-  .cta-ghost {
-    font-weight: bold;
-    font-size: 1rem;
-    color: var(--primary);
-    text-decoration: none;
-    padding: 12px 24px;
   }
 
   .hero {
@@ -280,6 +282,20 @@ form {
   .nav-menu-item {
     display: table-caption;
     text-align: center;
+    min-width: 56px;
+  }
+  .navigation-menu-container {
+    width: 100%;
+  }
+  ul.navigation-menu {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .nav-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--light);
   }
   .hero {
     flex-wrap: wrap;
