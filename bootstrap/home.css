@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+
+:root {
+  --primary: #518c51;
+  --bs-primary-rgb: 81, 140, 81;
+  --secondary: #d9eadc;
+  --dark: #2a3c34;
+  --light: #fff;
+  --accent: #94eec3;
+  --accent-light: #ecffef;
+  --text: #333;
+  --border: #dddddd;
+  --disabled: #d3d3d3;
+}
+body {
+  font-family: Raleway;
+  overflow-x: hidden;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+.bg-primary-subtle {
+  background-color: var(--accent-light) !important;
+  color: var(--primary);
+}
+.text-primary {
+  color: var(--primary) !important;
+}
+.text-accent {
+  color: var(--accent);
+}
+.btn {
+  border-radius: 10rem !important;
+  font-weight: bold;
+}
+
+.btn-md {
+  padding: 0.75rem 1.5rem;
+}
+.btn-primary {
+  background-color: var(--primary) !important;
+  border: none;
+}
+.btn-tertiary {
+  background-color: var(--light);
+  color: var(--primary);
+}
+.btn-link {
+  color: var(--primary) !important;
+  text-decoration: none;
+}
+.progress-bar {
+  background-color: var(--primary) !important;
+}
+.nav-pills .nav-link {
+  border-radius: 10rem !important;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--light) !important;
+  color: var(--primary) !important;
+}
+
+.nav-pills .nav-link {
+  color: var(--light) !important;
+  border: 1px solid var(--light) !important;
+}
+
+@media (min-width: 1024px) {
+  .credibility-number {
+    font-size: 2rem;
+  }
+  .hero-content-description {
+    font-size: 1.25rem;
+  }
+  .py-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section-2 {
+    background-image: url("asset/bg-ellipse.svg");
+    background-position: center left;
+    background-repeat: no-repeat;
+  }
+  .activity {
+    max-height: 660px;
+  }
+  .donation {
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .credibility-number {
+    font-size: 1.5rem;
+  }
+  .py-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.layanan {
+  background-image: url("asset/bg-layanan.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#navbarNav {
+  justify-content: flex-end;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* .nav-link {
+  padding: 0.5rem 1rem !important;
+} */
