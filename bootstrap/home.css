@@ -27,6 +27,9 @@ h4,
 h5 {
   font-weight: bold;
 }
+a:hover {
+  color: var(--primary) !important;
+}
 .bg-dark {
   background-color: var(--dark) !important;
 }
@@ -78,6 +81,26 @@ h5 {
 }
 
 @media (min-width: 1024px) {
+  .mobile,
+  img.mobile {
+    display: none !important;
+  }
+  .hero-desktop {
+    padding-top: 4.5rem;
+  }
+  .hero-content {
+    padding: 3rem 0 3rem 6rem;
+  }
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    height: 100%;
+  }
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
   .credibility-number {
     font-size: 2rem;
   }
@@ -102,6 +125,19 @@ h5 {
 }
 
 @media (max-width: 1024px) {
+  .hero-desktop {
+    padding: 4rem 0 3rem 0;
+  }
+  .hero-content {
+    padding: 2rem 1.25rem 0 1.25rem;
+  }
+  .desktop,
+  img.desktop {
+    display: none !important;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
   .credibility-number {
     font-size: 1.5rem;
   }
