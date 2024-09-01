@@ -4,252 +4,464 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="home.css" />
-    <link rel="stylesheet" href="anak-yatim.css" />
   </head>
   <body>
-    <div class="nav-container">
-      <nav class="page-center">
-        <div class="d-flex justify-content-space-between">
-          <a href="#" class="desktop">
-            <img src="assets/Logo.png" alt="Logo" />
-          </a>
-          <div
-            class="d-flex justify-content-space-between align-items-center gap-32 navigation-menu-container"
-          >
-            <ul class="navigation-menu">
-              <li>
-                <a href="#donasi">
-                  <div class="nav-menu-item">
-                    <div class="mobile">
-                      <img src="assets/icon.svg" alt="Icon Document" />
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100"
+      style="z-index: 999"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="asset/LOGO.png" alt="LOGO" style="height: 48px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/etalase.html">Donasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#layanan">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aktivitas">Aktivitas</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/profile.html"
+                >Akun saya</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="etalase bg-light text-dark py-section">
+      <div class="container mt-5">
+        <h2>Donasi Tersedia</h2>
+
+        <div class="row mt-5">
+          <div class="col">
+            <ul
+              class="nav nav-pills mb-3 justify-content-center gap-3 flex-nowrap align-items-center"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active green-theme"
+                  id="pills-ketahanan-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-ketahanan"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-ketahanan"
+                  aria-selected="true"
+                >
+                  Ketahanan pangan
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link green-theme"
+                  id="pills-pendidikan-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-pendidikan"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-pendidikan"
+                  aria-selected="false"
+                >
+                  Pendidikan
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link green-theme"
+                  id="pills-kesehatan-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-kesehatan"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-kesehatan"
+                  aria-selected="false"
+                >
+                  Kesehatan
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-ketahanan"
+                role="tabpanel"
+                aria-labelledby="pills-ketahanan-tab"
+              >
+                <div class="container mt-5">
+                  <div class="row" style="row-gap: 1.5rem">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="asset/image-activity.png"
+                          class="card-img-top px-3 pt-3"
+                          alt="Activity"
+                        />
+                        <div class="card-body">
+                          <span class="badge bg-primary-subtle mb-3"
+                            >Category</span
+                          >
+
+                          <h5 class="card-title">
+                            Lorem Ipsum is simply dummy text of the printing
+                          </h5>
+                          <p class="card-text">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                          </p>
+                          <div class="progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 25%"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              25%
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary btn-md mt-4"
+                            >Donasi Sekarang&nbsp;<span
+                              class="bi-arrow-right"
+                            ></span
+                          ></a>
+                        </div>
+                      </div>
                     </div>
-                    Donasi
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="asset/image-activity.png"
+                          class="card-img-top px-3 pt-3"
+                          alt="Activity"
+                        />
+                        <div class="card-body">
+                          <span class="badge bg-primary-subtle mb-3"
+                            >Category</span
+                          >
+
+                          <h5 class="card-title">
+                            Lorem Ipsum is simply dummy text of the printing
+                          </h5>
+                          <p class="card-text">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                          </p>
+                          <div class="progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 25%"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              25%
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary btn-md mt-4"
+                            >Donasi Sekarang&nbsp;<span
+                              class="bi-arrow-right"
+                            ></span
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="asset/image-activity.png"
+                          class="card-img-top px-3 pt-3"
+                          alt="Activity"
+                        />
+                        <div class="card-body">
+                          <span class="badge bg-primary-subtle mb-3"
+                            >Category</span
+                          >
+
+                          <h5 class="card-title">
+                            Lorem Ipsum is simply dummy text of the printing
+                          </h5>
+                          <p class="card-text">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                          </p>
+                          <div class="progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 25%"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              25%
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary btn-md mt-4"
+                            >Donasi Sekarang&nbsp;<span
+                              class="bi-arrow-right"
+                            ></span
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="asset/image-activity.png"
+                          class="card-img-top px-3 pt-3"
+                          alt="Activity"
+                        />
+                        <div class="card-body">
+                          <span class="badge bg-primary-subtle mb-3"
+                            >Category</span
+                          >
+
+                          <h5 class="card-title">
+                            Lorem Ipsum is simply dummy text of the printing
+                          </h5>
+                          <p class="card-text">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                          </p>
+                          <div class="progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 25%"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              25%
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary btn-md mt-4"
+                            >Donasi Sekarang&nbsp;<span
+                              class="bi-arrow-right"
+                            ></span
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-pendidikan"
+                role="tabpanel"
+                aria-labelledby="pills-pendidikan-tab"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-kesehatan"
+                role="tabpanel"
+                aria-labelledby="pills-kesehatan-tab"
+              >
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sedekah bg-light text-dark">
+      <div class="container">
+        <div class="row">
+          <h3>Sedekah lagi di sini</h3>
+          <div class="d-grid gap-3 mt-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex gap-3 align-items-center">
+                  <img src="asset/VectorIconDonasi.svg" alt="Icon donasi" />
+                  <div class="d-flex flex-column gap-1">
+                    <p class="my-0"><b>Sedekah anak yatim</b></p>
+                    <p class="my-0">
+                      200.000 • <span class="opacity-50">3 hari lalu</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex gap-3 align-items-center">
+                  <img src="asset/VectorIconDonasi.svg" alt="Icon donasi" />
+                  <div class="d-flex flex-column gap-1">
+                    <p class="my-0"><b>Sedekah anak yatim</b></p>
+                    <p class="my-0">
+                      200.000 • <span class="opacity-50">3 hari lalu</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex gap-3 align-items-center">
+                  <img src="asset/VectorIconDonasi.svg" alt="Icon donasi" />
+                  <div class="d-flex flex-column gap-1">
+                    <p class="my-0"><b>Sedekah anak yatim</b></p>
+                    <p class="my-0">
+                      200.000 • <span class="opacity-50">3 hari lalu</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sedekah bg-light text-dark py-section">
+      <div class="container">
+        <div class="row">
+          <a href="#">
+            <img src="asset/BannerSedekah.png" alt="Banner" class="w-100" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <img src="asset/LOGO.png" alt="LOGO" class="mb-3" />
+            <h5>Contact</h5>
+            <ul class="nav flex-column mt-4">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Whatsapp: 0812492939</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Instagram: @loremipsum</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Email: loremipsum@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Layanan</h5>
+            <ul class="nav flex-column mt-4">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Infaq Digital</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Sedekah
                 </a>
               </li>
-              <li>
-                <a href="#layanan"
-                  ><div class="nav-menu-item">
-                    <div class="mobile">
-                      <img src="assets/icon.svg" alt="Icon Document" />
-                    </div>
-                    Layanan
-                  </div></a
-                >
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Zakat</a>
               </li>
-              <li>
-                <a href="#aktivitas"
-                  ><div class="nav-menu-item">
-                    <div class="mobile">
-                      <img src="assets/icon.svg" alt="Icon Document" />
-                    </div>
-                    Aktivitas
-                  </div></a
-                >
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Wakaf</a>
               </li>
-              <li class="mobile">
-                <a href="#aktivitas"
-                  ><div class="nav-menu-item">
-                    <div class="mobile">
-                      <img src="assets/icon.svg" alt="Icon Document" />
-                    </div>
-                    Profile
-                  </div></a
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Lainnya</h5>
+            <ul class="nav flex-column mt-4">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Event</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQ</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Gabung Mitra</a
                 >
               </li>
             </ul>
-            <a href="#" class="cta-ghost desktop">Akun Saya</a>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <h5>Metode Pembayaran</h5>
+            <div class="d-flex gap-3 flex-wrap mt-4">
+              <img src="asset/spay.png" alt="ShopeePay" />
+              <img src="asset/gopay.png" alt="Gopay" />
+              <img src="asset/bni.png" alt="BNI" />
+              <img src="asset/mandiri.png" alt="Mandiri" />
+              <img src="asset/bsi.png" alt="BSI" />
+            </div>
           </div>
         </div>
-      </nav>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <p>Copyright 2023 MRKR alright reserved</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#">Privacy Policy</a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#">Terms of Services</a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#">Cookies Settings</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
-    <div class="container">
-      <div class="page-center">
-        <div class="anak-yatim">
-          <h1>Donasi Tersedia</h1>
-          <div class="tab">
-            <button
-              class="tablinks"
-              onclick="openCity(event, 'Anak Yatim')"
-              id="defaultOpen"
-            >
-              Anak Yatim
-            </button>
-            <button class="tablinks" onclick="openCity(event, 'Pendidikan')">
-              Pendidikan
-            </button>
-            <button class="tablinks" onclick="openCity(event, 'Pembangunan')">
-              Pembangunan
-            </button>
-          </div>
-
-          <div id="Anak Yatim" class="tabcontent">
-            <div class="group-card">
-              <div class="card">
-                <div class="banner"></div>
-                <div class="avatar">
-                  <img src="assets/User.png" alt="User" loading="lazy" />
-                </div>
-                <div class="detail">
-                  <p><b>Aleesha</b></p>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry...
-                  </p>
-                  <div class="d-flex link justify-content-center">
-                    <a href="#" class="align-items-center">Donasi Sekarang </a>
-                    <img
-                      src="assets/VectorIconArrowRight.svg"
-                      alt="Arrow Right"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="banner"></div>
-                <div class="avatar">
-                  <img src="assets/User.png" alt="User" loading="lazy" />
-                </div>
-                <div class="detail">
-                  <p><b>Aleesha</b></p>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry...
-                  </p>
-                  <div class="d-flex link justify-content-center">
-                    <a href="#" class="align-items-center">Donasi Sekarang </a>
-                    <img
-                      src="assets/VectorIconArrowRight.svg"
-                      alt="Arrow Right"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="Pendidikan" class="tabcontent">
-            <h3>Pendidikan</h3>
-            <p>Pendidikan is here</p>
-          </div>
-
-          <div id="Pembangunan" class="tabcontent">
-            <h3>Pembangunan</h3>
-            <p>Pembangunan is here</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="donasi-lainnya">
-      <div class="page-center">
-        <div class="donasi-lainnya-content">
-          <div class="d-flex justify-content-space-between align-items-center">
-            <h2>Donasi Lainnya</h2>
-            <div class="d-flex link">
-              <a href="#" class="align-items-center">Selengkapnya</a>
-              <img src="assets/VectorIconArrowRight.svg" alt="Arrow Right" />
-            </div>
-          </div>
-          <div class="list-group d-grid gap-20">
-            <div class="list align-items-center d-flex gap-12">
-              <img src="assets/VectorIcon.svg" alt="Icon" />
-              <div class="d-grid gap-8">
-                <p class="m-0"><b>Sedekah anak yatim</b></p>
-                <div class="d-flex align-items-center gap-8">
-                  <p class="m-0">200.000</p>
-                  <p class="m-0">•</p>
-                  <p class="m-0 opacity-60">3 hari lalu</p>
-                </div>
-              </div>
-            </div>
-            <div class="list align-items-center d-flex gap-12">
-              <img src="assets/VectorIcon.svg" alt="Icon" />
-              <div class="d-grid gap-8">
-                <p class="m-0"><b>Sedekah anak yatim</b></p>
-                <div class="d-flex align-items-center gap-8">
-                  <p class="m-0">200.000</p>
-                  <p class="m-0">•</p>
-                  <p class="m-0 opacity-60">3 hari lalu</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-center banner-donasi-container">
-      <div class="banner-donasi">
-        <div class="banner-donasi-content">
-          <h2 class="subtitle-bold-32">
-            Kami menerima buat sedekah selain material
-          </h2>
-          <button class="tertiary lg">Donasi Sekarang</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- footer  -->
-    <div class="footer">
-      <div class="page-center">
-        <div class="footer-top">
-          <div class="d-flex justify-content-space-between footer-top-content">
-            <div class="footer-top-item">
-              <ul>
-                <li><img src="assets/Logo.png" alt="Logo" /></li>
-                <li><b>Contact</b></li>
-                <li><a href="#">Whatsapp: 0812492939</a></li>
-                <li><a href="#">Instagram: @loremipsum</a></li>
-                <li><a href="#">Email: loremipsum@gmail.com</a></li>
-              </ul>
-            </div>
-            <div class="footer-top-item">
-              <ul>
-                <li><b>Layanan</b></li>
-                <li><a href="#">Infaq Digital</a></li>
-                <li><a href="#">Sedekah </a></li>
-                <li><a href="#">Zakat</a></li>
-                <li><a href="#">Wakaf</a></li>
-              </ul>
-            </div>
-            <div class="footer-top-item">
-              <ul>
-                <li><b>Lainnya</b></li>
-                <li><a href="#">Event</a></li>
-                <li><a href="#">FAQ </a></li>
-                <li><a href="#">Gabung Mitra</a></li>
-              </ul>
-            </div>
-            <div class="footer-top-item">
-              <p><b>Metode Pembayaran</b></p>
-              <div class="d-flex flex-wrap gap-32 logos">
-                <img src="assets/spay.png" alt="ShopeePay" />
-                <img src="assets/gopay.png" alt="Gopay" />
-                <img src="assets/bni.png" alt="BNI" />
-                <img src="assets/mandiri.png" alt="Mandiri" />
-                <img src="assets/bsi.png" alt="BSI" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <hr />
-          <div
-            class="d-flex justify-content-space-between footer-bottom-content"
-          >
-            <p>Copyright 2023 MRKR alright reserved</p>
-            <ul class="d-flex gap-32">
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Services</a></li>
-              <li><a href="#">Cookies Settings</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end of footer  -->
-    <script src="home.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
