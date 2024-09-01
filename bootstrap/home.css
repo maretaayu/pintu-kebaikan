@@ -122,9 +122,28 @@ a:hover {
   .donation {
     padding-top: 150px;
   }
+  .profile-info img {
+    width: 150px;
+    height: 150px;
+  }
+  .profile {
+    padding-top: 120px;
+    height: 222px;
+  }
+  .grid-scrollable {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 1024px) {
+  .grid-scrollable {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 1rem;
+  }
   .hero-desktop {
     padding: 4rem 0 3rem 0;
   }
@@ -144,6 +163,13 @@ a:hover {
   .py-section {
     padding-top: 64px;
     padding-bottom: 64px;
+  }
+  .profile {
+    padding: 100px 0 32px;
+  }
+  .profile-info img {
+    width: 64px;
+    height: 64px;
   }
 }
 
@@ -175,13 +201,17 @@ a:hover {
 
 .box-green {
   background-color: var(--dark);
+}
+
+.profile-box {
+  height: 300px;
+}
+.anak-yatim-box {
   height: 100px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-
 img.anak-yatim-photo {
-  border-radius: 50%;
   width: 100px;
   height: 100px;
   margin-top: -54px;

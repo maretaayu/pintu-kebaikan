@@ -467,6 +467,9 @@ hr {
   .form-left {
     display: none;
   }
+  .profile-box {
+    height: 136px;
+  }
 }
 
 /* section bantu  */
