@@ -172,7 +172,10 @@ a:hover {
     height: 64px;
   }
 }
-
+.btn-primary:hover {
+  background-color: var(--dark) !important;
+  color: var(--light) !important;
+}
 .layanan {
   background-image: url("asset/bg-layanan.png");
   background-size: cover;
